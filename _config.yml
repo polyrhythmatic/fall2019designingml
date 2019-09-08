@@ -1,0 +1,24 @@
+title: "CURRENTS: DESIGNING WITH ML"
+email: seth@channel.studio
+description: >- # this means to ignore newlines until "baseurl:"
+  This course will introduce students to the subject of machine learning and its applications in the field of design, particularly for creating interactive web applications that enable the semantic exploration of datasets. Students will gain a top-level understanding of the history and current state of machine learning, as well as an understanding of the frontiers of data organization for image, text, and audio. Additionally, this course will explore the philosophical and moral implications of emerging machine learning technologies and their impact on society at large. Valid outcomes from the course may be tools, products, or art, and may focus on practical or conceptual/critical applications. This is a hands on technical course using Python, Javascript, HTML, and CSS. Students will be expected to keep up with the technical demands independently.
+
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://courses.channel.studio/fall2019designingml" # the base hostname & protocol for your site, e.g. http://example.com
+
+# Build settings
+markdown: kramdown
+
+plugins:
+  - jekyll-feed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+include: 
+  - _pages
+  - _guides
+
+sass:
+  style: compressed

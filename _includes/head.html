@@ -1,0 +1,47 @@
+<head>
+  <meta charset="utf-8" />
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="{% if page.description %}{{ page.description }}{{ site.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{{ site.description }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:image" content="{{ site.logo | prepend: site.url }}" />
+  <title>{{ site.title }}{% if page.title %} | {{ page.title }}{% endif %}</title>
+  <link rel="apple-touch-icon" sizes="57x57" href="{{ site.url }}/assets/favicon/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="{{ site.url }}/assets/favicon/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="{{ site.url }}/assets/favicon/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="{{ site.url }}/assets/favicon/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="{{ site.url }}/assets/favicon/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="{{ site.url }}/assets/favicon/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="{{ site.url }}/assets/favicon/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="{{ site.url }}/assets/favicon/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ site.url }}/assets/favicon/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="{{ site.url }}/assets/favicon/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ site.url }}/assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="{{ site.url }}/assets/favicon/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ site.url }}/assets/favicon/favicon-16x16.png">
+  <link rel="manifest" href="{{ site.url }}/assets/favicon/manifest.json">
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="{{ site.url }}/assets/favicon/ms-icon-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+  <style type="text/css">
+    @font-face {
+      font-family: "Ace Lift";
+      src: local("☺︎"),
+        url("{{ 'assets/fonts/ace_lift.woff' | absolute_url }}") format("woff"),
+        url("{{ 'assets/fonts/ace_lift.otf' | absolute_url }}") format("opentype"),
+        url("{{ 'assets/fonts/ace_lift.eot' | absolute_url }}"),
+        url("{{ 'assets/fonts/ace_lift.eot' | absolute_url }}?#iefix") format("embedded-opentype"),
+        url("{{ 'assets/fonts/ace_lift.ttf' | absolute_url }}") format("truetype");
+    }
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/monokai-sublime.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  {% capture style %}{% include bundle.scss %}{% endcapture %}
+  <style type="text/css">{{ style | scssify }}</style>
+</head>

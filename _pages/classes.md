@@ -66,9 +66,26 @@ Next we can use pip, pythons package manager, to install jupyter notebook and ot
 ```console
 $ pip3 install jupyterlab
 $ pip3 install matplotlib
+```
 
-[A good post on whitespace for those who are curious](https://stackoverflow.com/questions/13884499/what-is-python-whitespace-and-how-does-it-work)
-[Another good post on scoping for index variables - or why "fruit" persisted outside the scope of our for loop](https://eli.thegreenplace.net/2015/the-scope-of-index-variables-in-pythons-for-loops/)
+We then run the command below to open a jupyter notebook. Make sure you are in the correct directory when you run this command.
+
+```console
+$ jupyter notebook
+```
+
+You can review the in class exercises we did here:
+
+* [Intro to Python](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Intro%20to%20Python.ipynb)
+
+Some recommended resources:
+* [learnpython.org](https://www.learnpython.org/)
+* [Codecademy](https://www.codecademy.com/learn/learn-python-3)
+* [Freecodecamp](https://guide.freecodecamp.org/python/)
+* Learn Python 3 the Hard Way (book)
+
+* [A good post on whitespace for those who are curious](https://stackoverflow.com/questions/13884499/what-is-python-whitespace-and-how-does-it-work)
+* [Another good post on scoping for index variables - or why "fruit" persisted outside the scope of our for loop](https://eli.thegreenplace.net/2015/the-scope-of-index-variables-in-pythons-for-loops/)
 
 ## Class 1 - 8/30
 

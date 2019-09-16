@@ -34,6 +34,8 @@ KNN
 * "K-Nearest Neighbor" is a machine learning algorithm used for both classification and regression. It is a "lazy learning" algorithm due to the fact that there is really is no learning at all. New data points are classified / valued according to a distance comparison with every data point in a training set. (source)[https://github.com/nature-of-code/NOC-S17-2-Intelligence-Learning/blob/master/week3-classification-regression/README.md]
 * Nice interactive demo [here](https://observablehq.com/@nsthorat/how-to-build-a-teachable-machine-with-tensorflow-js) a bit further down the page
 
+The notebook from the class should be listed on the "notebooks" page.
+
 More reading:
 
 * [CS231 - Python Numpy Tutorial](http://cs231n.github.io/python-numpy-tutorial/)

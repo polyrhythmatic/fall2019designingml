@@ -43,6 +43,7 @@ More reading:
 * [ml4a KNN Classification](https://github.com/ml4a/ml4a-guides/blob/master/notebooks/classification_kNN.ipynb)
 * [Pandas](https://towardsdatascience.com/pandas-dataframe-a-lightweight-intro-680e3a212b96)
 * [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html)
+* [How to master Pandas](https://towardsdatascience.com/how-to-master-pandas-8514f33f00f6)
 
 
 ## Class 2 - 9/6

@@ -5,6 +5,44 @@ permalink: /classes
 
 # Classes
 
+## Class 3 - 9/13
+
+# Vectors and classification
+
+### What is a vector?
+
+
+* A vector has magnitude
+* A vector has direction
+
+A vector's magnitude is the length - the size. A vector is a set of instructions on how to get from the tail to the tip
+
+### Why vectors?
+
+  Vectors can be used for physics. Vectors can explain movement, static forces, and so many other things. Vectors can be used to describe position in a space. But when we talk about space we often think of 2d or 3d. Vectors can exist in many more dimenstions. And sometimes it makes sense to pair a bunch of numbers together! There are a bunch of operations we want to do on both numbers so we consider them together
+
+Vector math we reviewed:
+
+* Add/sub
+* mult/div
+* Magnitude
+* Normalize
+
+KNN
+
+* "Tell me who your neighbor is, and I’ll tell you who you are"
+* "K-Nearest Neighbor" is a machine learning algorithm used for both classification and regression. It is a "lazy learning" algorithm due to the fact that there is really is no learning at all. New data points are classified / valued according to a distance comparison with every data point in a training set. (source)[https://github.com/nature-of-code/NOC-S17-2-Intelligence-Learning/blob/master/week3-classification-regression/README.md]
+* Nice interactive demo [here](https://observablehq.com/@nsthorat/how-to-build-a-teachable-machine-with-tensorflow-js) a bit further down the page
+
+More reading:
+
+* [CS231 - Python Numpy Tutorial](http://cs231n.github.io/python-numpy-tutorial/)
+* [K-Nearest Neighbors Algorithm in Python and Scikit-Learn](https://stackabuse.com/k-nearest-neighbors-algorithm-in-python-and-scikit-learn/)
+* [ml4a KNN Classification](https://github.com/ml4a/ml4a-guides/blob/master/notebooks/classification_kNN.ipynb)
+* [Pandas](https://towardsdatascience.com/pandas-dataframe-a-lightweight-intro-680e3a212b96)
+* [Pandas documentation](https://pandas.pydata.org/pandas-docs/stable/getting_started/10min.html)
+
+
 ## Class 2 - 9/6
 
 What is scripting?
@@ -56,7 +94,7 @@ $ brew install python
 Check your install with the following command
 
 ```console
-python --version
+$ python --version
 ```
 
 It should say report a version of python 3 or higher

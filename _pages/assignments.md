@@ -7,10 +7,28 @@ permalink: /assignments
 
 For all readings unless otherwise noted, please write down two non "yes or no" questions and type them into the Google doc I've shared with you. Be prepared to discuss the questions/readings in class.
 
-## Week 3 (due 9/20)
+## Week 5 (due 10/3)
+
+* Read
+  * [Excavating AI](https://www.excavating.ai/)
+
+## Week 4 (due 9/27)
+
 * Read
   * [Using Artificial Intelligence to Augment Human Intelligence](https://distill.pub/2017/aia/)
   * [Creative AI](https://medium.com/@creativeai/creativeai-9d4b2346faf3) - optional reading, will discuss in class
+
+* Code
+  * Review the notes from class and be sure you understand the concept of the perceptron
+  * Watch videos/read articles if unclear
+  * Try implementing the perceptron on another dataset
+
+## Week 3 (due 9/20)
+
+* Read
+  * [Anatomy of an AI System](https://anatomyof.ai/)
+  * [Power, Pollution and the Internet](https://www.nytimes.com/2012/09/23/technology/data-centers-waste-vast-amounts-of-energy-belying-industry-image.html)
+  * [Creating an AI can be five times worse for the planet than a car](https://www.newscientist.com/article/2205779-creating-an-ai-can-be-five-times-worse-for-the-planet-than-a-car/)
 
 * Watch (optional)
   * [Vectors, what even are they?](https://www.youtube.com/watch?v=fNk_zzaMoSs)

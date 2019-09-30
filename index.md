@@ -22,7 +22,7 @@ Please note - course outline is subject to change during the semester. Please pa
 | 1    | 8/30  | Introduction and overview, syllabus handed out                            |
 | 2    | 9/6   | Python overview                                                           |
 | 3    | 9/13  | Essentials of ML and exploring in N dimensions                            |
-| 4    | 9/20  | Deep learning - history and current applications                          |
+| 4    | 9/20  | Deep learning - history and current applications (rescheduled to 9/24)                          |
 | 5    | 9/27  | Datasets and scraping                                                     |
 | 6    | 10/3  | Roll your own Neural Network (9:30AM at NEW INC )                         |
 | 7    | 10/11 | Feature extraction and exploration methodologies, introducing the midterm |

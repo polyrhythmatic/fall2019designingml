@@ -12,6 +12,9 @@ For all readings unless otherwise noted, please write down two non "yes or no" q
 * Read
   * [Excavating AI](https://www.excavating.ai/)
 
+* Code
+  * Continue trying to scrape websites using what we covered in class.
+
 ## Week 4 (due 9/27)
 
 * Read

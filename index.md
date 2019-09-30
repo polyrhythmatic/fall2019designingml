@@ -48,6 +48,14 @@ By the successful completion of this course, students will be able to:
 * Effectively debug and problem solve broken code
 * Develop an understanding of the moral, ethical, and societal impacts of machine learning
 
+## Attributions
+
+This course borrows from many sources, but especially the following syllabi
+
+* [ml4a](https://ml4a.github.io)
+* [Scrapism](https://github.com/antiboredom/sfpc-scrapism-spring-2019)
+* [Nature of Code](https://github.com/nature-of-code/NOC-S17-2-Intelligence-Learning)
+
 ## Assessable Tasks
 
 * Project #1 (Midterm), Due 10/25

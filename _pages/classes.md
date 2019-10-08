@@ -5,7 +5,82 @@ permalink: /classes
 
 # Classes
 
-## Class 5 - 10/3
+## Class 6 - 10/3
+
+## Multilayer Perceptrons and Gradient Descent
+
+what are we covering today?
+
+Plain vanilla aka multilayer perceptron
+
+We are going to use tensorflow 2.0 - just released!
+
+mnist :
+28 x 28 numbers - 784 total numbers
+
+each one holds the grayscale value of that pixel (0 - 1)
+
+general structure of the network:
+
+input - > hidden layer -> output
+
+so how does this work?
+
+when the network sees some specific features, certain parts of it activate in response
+
+just like our perceptron, we have weights for each connection
+
+we take the weighted sum, and then calculate our activation. We want our activations to be between 0 and 1. In order to achieve this, we use the sigmoid function : 1 / (1 + e^-x). So the activation of the layer is a measure of how positive the weighted sum is.
+
+Stochastic Gradient Descent:
+
+* an optimization algorithm used to train machine learning algorithms, most notably artificial neural networks used in deep learning
+
+* gradient refers to the calculation of an error gradient, or the "slope of error" and descent refers to moving down along that slope towards some minumum level of error
+
+* we define some 'cost function' - a value that represents how "wrong" the network is with respect to it's weights
+
+* instead of thinking of a massive function with tons of variables, we can consider one single function (inverted parabola) C(w)
+
+* how do we find a weight value such that it is a minumum of this function? That's pretty easy for a function with just a few variables but with 40k variables, its a very difficult problem
+
+* instead, we start at any old point and determine which direction we should move
+
+* we calculate the slope of that function and use that to determine which direction to move
+
+* we then take a bunch of small steps in that direction during each batch
+
+Some terminology:
+
+* sample - a single row of data that is fed into the algorithm and an output that is used to compare to the prediction. a training set consists of many samples
+
+* batch size - a hyperparameter that defines the number of samples to work through before updating the internal model parameters
+
+* epoch - hyperparameter that defines the number of times the algorithm will work through an entire dataset
+
+* SGD - stochastic gradient descent, described above
+
+Additional resources:
+
+* [But what is a Neural Network? | Deep learning, chapter 1](https://youtu.be/aircAruvnKk)
+
+* [Gradient descent, how neural networks learn | Deep learning, chapter 2](https://youtu.be/IHZwWFHWa-w)
+
+* [NOC 10.4: Neural Networks: Multilayer Perceptron Part 1 - The Nature of Code](https://youtu.be/u5GAVdLQyIg)
+
+* [NOC 10.5: Neural Networks: Multilayer Perceptron Part 2 - The Nature of Code](https://youtu.be/IlmNhFxre0w)
+
+* [The Building Blocks of Interpretability](https://distill.pub/2018/building-blocks/)
+
+* [Introduction to Multilayer Neural Networks with TensorFlow’s Keras API](https://towardsdatascience.com/introduction-to-multilayer-neural-networks-with-tensorflows-keras-api-abf4f813959)
+
+* [ml4a Demo: MNIST input](https://ml4a.github.io/demos/f_mnist_input/) - this should clarify the difference between input and first layer
+
+* [ml4a Demo: MNIST forward pass](https://ml4a.github.io/demos/forward_pass_mnist/) - try refreshing and look at the probability update
+
+* [Jay Alamar - A Visual And Interactive Look at Basic Neural Network Math](http://jalammar.github.io/feedforward-neural-networks-visual-interactive/)
+
+## Class 5 - 9/27
 
 ## Datasets and Scraping
 

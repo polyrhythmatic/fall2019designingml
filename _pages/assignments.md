@@ -7,6 +7,17 @@ permalink: /assignments
 
 For all readings unless otherwise noted, please write down two non "yes or no" questions and type them into the Google doc I've shared with you. Be prepared to discuss the questions/readings in class.
 
+## Week 6 (due 10/11)
+
+* Read
+
+  * [A New Approach to Understanding How Machines Think](https://www.quantamagazine.org/been-kim-is-building-a-translator-for-artificial-intelligence-20190110/) - TCAV concept is less important than surrounding context
+  * [Dimensionality-Reduction Algorithms
+for Progressive Visual Analytics](https://www.asci.tudelft.nl/media/thesis/405_nicola_pezzotti.pdf) - just summary and introduction
+
+* Code
+  * Try using our multilayer perceptron with a different dataset. Can you get it to work with CIFAR-10 or Fashion MNIST datasets? What about the Iris dataset? Try playing with hyperparameters and number of layers/connections. I highly recommend reviewing the referenced material in the class notes if you are at all confused.
+
 ## Week 5 (due 10/3)
 
 * Read

@@ -12,3 +12,5 @@ permalink: /notebooks
 * [Week 4 - Perceptrons](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Perceptrons.ipynb)
 
 * [Week 5 - Scraping](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Scraping.ipynb)
+
+* [Week 6 - Multilayer Perceptron](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Multilayer%20Perceptron.ipynb)

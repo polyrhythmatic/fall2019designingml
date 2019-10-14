@@ -5,6 +5,42 @@ permalink: /classes
 
 # Classes
 
+## Class 7 - 10/11
+
+## Feature extraction and exploration methodologies
+
+What is feature extraction?
+
+* In a multi layer neural network, the final layer is known as the softmax
+* It takes a list of numbers from the network and “squashes” them into probabilities
+* The layer before this final layer is known as the logits, or feature vector
+* This is the “fingerprint” of the image, and can be used to compare images
+
+KMeans Clustering
+
+* KMeans clustering is an unsupervised machine learning method that allows us to "automatically" find clusters of similar data points. It requires that we know how many clusters we want ahead of time (this is our "K" value). 
+
+* We can determine the optimal "K" value using the [elbow method](https://blog.cambridgespark.com/how-to-determine-the-optimal-number-of-clusters-for-k-means-clustering-14f27070048f) - does not necessarily apply to the work in this class
+
+UMAP
+
+* UMAP is a new dimensionality reduction method that outperforms t-SNE - the previous SOTA for dimensionality reduction and visualization
+
+* Dimensionality reduction is about learning the "latent" features in your data
+
+* A lot of the features are redundant or can be condensed
+
+* For example - mnist has 784 dimension, we shouldn't need this many points to represent simple digits
+
+Additional resources:
+
+* Good in-depth explanations of feature extraction [here](https://observablehq.com/@nsthorat/how-to-build-a-teachable-machine-with-tensorflow-js) and [here](https://github.com/ml4a/ml4a-guides/blob/master/notebooks/image-search.ipynb)
+* [How KMeans clustering works](https://www.youtube.com/watch?v=4b5d3muPQmA)
+* [A very mathy discussion about UMAP](https://youtu.be/nq6iPZVUxZU)
+* [UMAP](https://umap-learn.readthedocs.io/en/latest/)
+* [If you're curious about t-SNE](https://distill.pub/2016/misread-tsne/)
+* [Rasterfairy](https://github.com/Quasimondo/RasterFairy)
+
 ## Class 6 - 10/3
 
 ## Multilayer Perceptrons and Gradient Descent
@@ -62,9 +98,9 @@ Some terminology:
 
 Additional resources:
 
-* [But what is a Neural Network? | Deep learning, chapter 1](https://youtu.be/aircAruvnKk)
+* [But what is a Neural Network? - Deep learning, chapter 1](https://youtu.be/aircAruvnKk)
 
-* [Gradient descent, how neural networks learn | Deep learning, chapter 2](https://youtu.be/IHZwWFHWa-w)
+* [Gradient descent, how neural networks learn - Deep learning, chapter 2](https://youtu.be/IHZwWFHWa-w)
 
 * [NOC 10.4: Neural Networks: Multilayer Perceptron Part 1 - The Nature of Code](https://youtu.be/u5GAVdLQyIg)
 

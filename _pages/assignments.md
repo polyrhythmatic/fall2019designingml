@@ -7,6 +7,11 @@ permalink: /assignments
 
 For all readings unless otherwise noted, please write down two non "yes or no" questions and type them into the Google doc I've shared with you. Be prepared to discuss the questions/readings in class.
 
+## Week 10 (due 11/8)
+
+* Read
+  * [Physiognomys New Clothes](https://medium.com/@blaisea/physiognomys-new-clothes-f2d4b59fdd6a)
+
 ## Week 7
 
 The Midterm (due 10/25)

@@ -5,6 +5,19 @@ permalink: /classes
 
 # Classes
 
+## Class 10 - 11/1
+
+## Designing and engineering audio explorations
+
+Further notes coming soon
+
+Additional resources:
+
+* [Kyle Mcdonald's Audio Notebooks](https://github.com/kylemcdonald/AudioNotebooks/blob/master/Generating%20Spectrograms.ipynb)
+* [ml4a Audio t-SNE](https://github.com/ml4a/ml4a-guides/blob/master/notebooks/audio-tsne.ipynb)
+* [ml4a Shortest Path Between Images](https://github.com/ml4a/ml4a-guides/blob/master/notebooks/image-path.ipynb)
+* [Basecs - From Theory To Practice: Representing Graphs](https://medium.com/basecs/from-theory-to-practice-representing-graphs-cfd782c5be38)
+
 ## Class 7 - 10/11
 
 ## Feature extraction and exploration methodologies

@@ -16,3 +16,5 @@ permalink: /notebooks
 * [Week 6 - Multilayer Perceptron](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Multilayer%20Perceptron.ipynb)
 
 * [Week 7 - Image Sorting](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Image%20Sorting.ipynb)
+
+* [Week 10 - Audio](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Audio.ipynb)

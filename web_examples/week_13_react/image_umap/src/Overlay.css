@@ -1,0 +1,17 @@
+.Overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  background: white;
+  width: 400px;
+  padding: 20px;
+  overflow: scroll;
+  max-height: 80vh;
+}
+
+.Overlay img {
+  margin: 30px auto 0;
+  display: block;
+  width: 100%;
+}

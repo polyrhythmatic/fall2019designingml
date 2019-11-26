@@ -5,11 +5,241 @@ permalink: /classes
 
 # Classes
 
+## Class 13 - 11/22
+
+## Creating user interfaces with React
+
+What is a single page app?
+
+["A single-page application (SPA) is a web application or web site that interacts with the user by dynamically rewriting the current page rather than loading entire new pages from a server. This approach avoids interruption of the user experience between successive pages, making the application behave more like a desktop application."](https://en.wikipedia.org/wiki/Single-page_application)
+
+React is JavaScript library from Facebook, that is designed to create interactive UIs.
+
+[https://reactjs.org/](https://reactjs.org/)
+
+Other libraries for single page apps
+* vuejs
+* angular
+* ember
+
+
+Current frameworks
+
+The latest in web technologies is using something called a framework. A web application framework is designed to facilitate the development of dynamic websites - sites where the content can change dynamically
+
+Examples of sites using web frameworks: 
+* Facebook
+* Airbnb
+* Instagram
+
+Advantages:
+* designed for interactivity
+* frameworks are stateful - logic follows state instead of jquery soup
+* allows creation of reusable components
+* (sometimes) faster rendering
+* fast to develop in (once you learn it)
+* very popular
+
+Disadvantages:
+* renders in browser - susceptible to performance issues
+* somewhat steep learning curve - this has gotten better recently
+* can be overkill for certain applications
+* How long will your framework be around for? They are changing constantly...
+
+Component based workflow: Your user interface is a collection of components. This is really great for staying organized when building UI's.
+
+React uses the virtual dom to run very fast and render only the parts of the site that have changed
+
+React is a UI Library that uses the MVC pattern
+
+  model - manages the data and rules of the application (react component)
+  view - the output, basically what is rendered in the dom
+  controller - takes user input and converts it into commands for the model or view (click, api requests might modify the model)
+
+
+Getting set up:
+
+The back end for all of this is node js
+Node is javascript that runs server-side
+
+brew install node
+
+this should give us access to npx and npm
+
+What is NPM?
+
+Node Package Manager - this is where all our different frameworks and javascript libraries live - pip for javascript
+
+Private company
+
+You might also see something called yarn - this was created by facebook in order to deal with codependency issues with NPM that have now been solved. You can use NPM in place of yarn
+
+Create react app
+
+npx create-react-app my-app
+
+npm i babel-preset-react-app@7.0.0
+
+
+
+React uses something called JSX - this is a combination of html and javascript
+
+you can use react without JSX, but it isnt recommended. JSX is one of the big advantages of react
+
+
+Resources:
+
+* [Level Up Tuts - What Is React?](https://www.youtube.com/watch?v=0KlRgFEEz0g)
+* [Level Up Tuts - React Hooks](https://www.youtube.com/watch?v=53hx4eF5ZT0&list=PLLnpHn493BHEnjBl-ByuFQgRuXm2oIi3e)
+* [Level Up Tuts - React 16 For Everyone](https://www.youtube.com/watch?v=omTwUHbyIBk&list=PLLnpHn493BHGW9YuiW8y9qHf-wHk_BKpe)
+* [Ameilia Wattenberger - Thinking in React Hooks](https://wattenberger.com/blog/react-hooks)
+
+## Class 12 - 11/15
+
+## Semantic organization of text
+
+Analyzing text:
+
+* text is messy - machine learning algorithms like well defined, fixed length inputs and outputs
+
+Bag of words model:
+
+* The bag-of-words model is a way of representing text data when modeling text with machine learning algorithms. We will use it for feature extraction on text.
+
+Bag of words (BOW) is a representation of text that describes the occurance of words within a document
+
+It measures:
+* the vocabulary of words in the document
+* the measure of presence of known words
+
+it's call bag of words because we discard the structure of the words and focus only on whether or not the words appear in the document and how frequently, and not where they occur or in what order
+
+There are a few different ways to approach bag of words:
+
+Count Occurance
+
+Let's look at an example:
+
+* He drinks a whiskey drink
+* He drinks a vodka drink
+* He drinks a lager drink
+* He drinks a cider drink
+
+We can look at each line as a "document". First - what is the unique vocabulary of this document? (ignoring case and punctuation)
+
+* he
+* drinks
+* a
+* whiskey
+* drink
+* vodka
+* lager
+* cider
+
+This is a unique vocabulary of 8 words out of a corpus of 20
+
+Next we create document vectors - the goal is to turn each document into a vector of that we can use as input or output for a model. We have a vocabulary of 8 so our vector length is 8. Thus, our first document becomes:
+
+[1, 1, 1, 1, 1, 0, 0, 0]
+
+For large corpus, we get something called a sparse vector - tons of vocabulary so vectors have many zeros - sparse vectors are harder to compute. We can ignore stop words, punctuation, case, fix mispellings, stemming (play -> playing). The problem with this solution is it high frequency words can dominate the model and cause bias. Think about it - less frequent words might be more important
+
+TF-IDF
+
+TF-IDF takes another approach - that high frequency may not able to provide much information gain. In another word, rare words contribute more weights to the model.
+
+Term Frequency: a scoring of the frequency of the word in the current document.
+Inverse Document Frequency: a scoring of how rare the word is across documents.
+
+The scores are a weighting where not all words are equally as important or interesting.
+
+Term Frequency (TF): is a scoring of the frequency of the word in the current document. Since every document is different in length, it is possible that a term would appear much more times in long documents than shorter ones. The term frequency is often divided by the document length to normalize.
+
+```none
+      number of times term t appears in the document
+tf =   ------------------------------------------
+          total number of terms in the document
+```
+<br>
+
+Inverse Document Frequency (IDF): is a scoring of how rare the word is across documents. IDF is a measure of how rare a term is. The rarer the term, the higher the IDF score.
+
+```none
+                total number of documents
+idf = loge(-----------------------------------)
+           number of documents with term in it
+```
+
+<br>
+tfidf is the multiplication of these two factors
+
+```none
+tfidf = tf * idf
+```
+
+Doc2vec
+
+Distributed Representations of Sentences and Documents - introduced in 2014 [https://arxiv.org/abs/1405.4053](https://arxiv.org/abs/1405.4053). We will use it to perform feature extraction on a corpus. Unlike bag of words models, the idea with Doc2Vec is to maintain the the ordering and semantics of the words. This should give us better features than tfidf.
+
+The idea for doc2vec started with Word2Vec. Word2vec is a three layer neural network with one input, one hidden and an output layer. The input layer corresponds to signals for context (surrounding words) and output layer correspond to signals for predicted target word. As the training procedure repeats this process over large number of sentences (or phrases), the weights “stabilize”. These weights are then used as the vectorized representations of words.
+
+Additional Resources:
+
+* [Reading and Writing Electronic Text by Allison Parrish (syllabus)](http://rwet.decontextualize.com/)
+* [An Introduction to Bag-of-Words in NLP](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
+* [3 basic approaches in Bag of Words which are better than Word Embeddings](https://towardsdatascience.com/3-basic-approaches-in-bag-of-words-which-are-better-than-word-embeddings-c2cbc7398016)
+* [A Gentle Introduction to the Bag-of-Words Model](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
+* [How does doc2vec represent feature vector of a document?](https://www.quora.com/How-does-doc2vec-represent-feature-vector-of-a-document-Can-anyone-explain-mathematically-how-the-process-is-done/answer/Piyush-Bhardwaj-7)
+* [A gentle introduction to Doc2Vec](https://medium.com/wisio/a-gentle-introduction-to-doc2vec-db3e8c0cce5e)
+* [Doc2vec tutorial](https://rare-technologies.com/doc2vec-tutorial/)
+* [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
+
+
+## Class 11 - 11/8
+
+## Using WebGL for interactive web spaces
+
+Making web apps 
+
+What makes up a website?
+
+HTML
+* markup - this is the structure of the website
+* this isn't just for visual effect - screen readers can also make sense of this
+* different html elements
+
+CSS
+* css is for styling webpages visually but also impacts the accessibility of the website
+* respect CSS! it's very difficult to do well
+
+Javscript
+* the interactive part of webpages
+* created by netscape in 1995 over the span of two weeks
+* most websites are now built almost entirely with javascript
+
+Why use webgl?
+* more performant
+* leverages the GPU
+* computers are really good at displaying bitmaps (images)
+
+For this class, we will look at using PIXI.js, a performant game engine which can also be used for interactive browser-based 2D graphics. You can read more about it [here](https://www.pixijs.com/)
+
+First, we bulk resize our images using resize.sh shell script
+
+You could also write a script that uses the python imaging library ([PIL](https://pillow.readthedocs.io/en/3.1.x/reference/Image.html#PIL.Image.Image.resize)) to do this.
+
+We also need to export the positions from our audio or image notebook. Both have been updated to export the JSON from those files.
+
+Lastly, once we export our JSON, we need to add `const sounds = ` or `const positions =` to the beginning of our position files, and change the name to end with '.js'. This is a little cheat to import the positions of our files without using an XHR request.
+
+You can find the code [here](https://github.com/channelstudio/fall2019designingml/tree/master/web_examples)
+
+Additional resources:
+* [kittykatattack's Learning Pixi](https://github.com/kittykatattack/learningPixi) - note this is for v4.5, PIXI is now on v5 so there may be some differences
+
 ## Class 10 - 11/1
 
 ## Designing and engineering audio explorations
-
-Further notes coming soon
 
 Additional resources:
 

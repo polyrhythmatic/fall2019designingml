@@ -29,9 +29,9 @@ Please note - course outline is subject to change during the semester. Please pa
 | 8    | 10/18 | Guest lecture and work session                                            |
 | 9    | 10/25 | Midterm presentations                                                     |
 | 10   | 11/1  | Designing and engineering audio explorations                              |
-| 11   | 11/8  | Semantic organization of text                                             |
-| 12   | 11/15 | Searching with recommendation engines and introducing the final           |
-| 13   | 11/22 | Video scene and content analysis                                          |
+| 11   | 11/8  | Using WebGL for interactive web spaces                                    |
+| 12   | 11/15 | Semantic organization of text                                             |
+| 13   | 11/22 | Creating user interfaces with React                                       |
 | 14   | 12/6  | Work session                                                              |
 | 15   | 12/13 | Final presentations                                                       |
 

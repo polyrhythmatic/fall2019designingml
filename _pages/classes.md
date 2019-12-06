@@ -46,45 +46,33 @@ Disadvantages:
 * can be overkill for certain applications
 * How long will your framework be around for? They are changing constantly...
 
-Component based workflow: Your user interface is a collection of components. This is really great for staying organized when building UI's.
-
-React uses the virtual dom to run very fast and render only the parts of the site that have changed
-
-React is a UI Library that uses the MVC pattern
-
-  model - manages the data and rules of the application (react component)
-  view - the output, basically what is rendered in the dom
-  controller - takes user input and converts it into commands for the model or view (click, api requests might modify the model)
-
+Component based workflow: Your user interface is a collection of components. This is really great for staying organized when building UI's. React uses the virtual dom to run very fast and render only the parts of the site that have changed.
 
 Getting set up:
 
-The back end for all of this is node js
-Node is javascript that runs server-side
+The back end for all of this is Node.js. Node.js is javascript that runs server-side using Chrome's V8 engine. To start, we need to install node:
 
-brew install node
+```bash
+$ brew install node
+```
 
-this should give us access to npx and npm
+This should give us access to npx and npm - the Node.js [package manager](https://www.npmjs.com/) and [package runner](https://medium.com/@maybekatz/introducing-npx-an-npm-package-runner-55f7d4bd282b). Node Package Manager (NPM) is where all our different frameworks and javascript libraries live - you can think of it as pip for javascript. You might also see another package manager called yarn - this was created by Facebook in order to deal with issues with NPM that have now been solved. You can use NPM in place of Yarn - more [here](https://iamturns.com/yarn-vs-npm-2018/)
 
-What is NPM?
+We will be using a starter command called create-react-app. It's a really great way to get everything set up with minimal effort. You can read more [here](https://github.com/facebook/create-react-app)
 
-Node Package Manager - this is where all our different frameworks and javascript libraries live - pip for javascript
+Simply run:
 
-Private company
+```bash
+$ npx create-react-app my-app
+```
 
-You might also see something called yarn - this was created by facebook in order to deal with codependency issues with NPM that have now been solved. You can use NPM in place of yarn
+If you get a cryptic error like I was, you can run the following command:
 
-Create react app
+```bash
+$ npm i babel-preset-react-app@7.0.0
+```
 
-npx create-react-app my-app
-
-npm i babel-preset-react-app@7.0.0
-
-
-
-React uses something called JSX - this is a combination of html and javascript
-
-you can use react without JSX, but it isnt recommended. JSX is one of the big advantages of react
+React uses something called JSX - this is a combination of html and javascript. You can use react without JSX, but it isn't recommended.
 
 
 Resources:
@@ -112,7 +100,7 @@ It measures:
 * the vocabulary of words in the document
 * the measure of presence of known words
 
-it's call bag of words because we discard the structure of the words and focus only on whether or not the words appear in the document and how frequently, and not where they occur or in what order
+It's call bag of words because we discard the structure of the words and focus only on whether or not the words appear in the document and how frequently, and not where they occur or in what order
 
 There are a few different ways to approach bag of words:
 
@@ -186,6 +174,7 @@ The idea for doc2vec started with Word2Vec. Word2vec is a three layer neural net
 Additional Resources:
 
 * [Reading and Writing Electronic Text by Allison Parrish (syllabus)](http://rwet.decontextualize.com/)
+* [Document Embedding Techniques](https://towardsdatascience.com/document-embedding-techniques-fed3e7a6a25d)
 * [An Introduction to Bag-of-Words in NLP](https://medium.com/greyatom/an-introduction-to-bag-of-words-in-nlp-ac967d43b428)
 * [3 basic approaches in Bag of Words which are better than Word Embeddings](https://towardsdatascience.com/3-basic-approaches-in-bag-of-words-which-are-better-than-word-embeddings-c2cbc7398016)
 * [A Gentle Introduction to the Bag-of-Words Model](https://machinelearningmastery.com/gentle-introduction-bag-words-model/)
@@ -193,6 +182,9 @@ Additional Resources:
 * [A gentle introduction to Doc2Vec](https://medium.com/wisio/a-gentle-introduction-to-doc2vec-db3e8c0cce5e)
 * [Doc2vec tutorial](https://rare-technologies.com/doc2vec-tutorial/)
 * [Distributed Representations of Sentences and Documents](https://cs.stanford.edu/~quocle/paragraph_vector.pdf)
+* [Doc2Vec to wikipedia articles](https://markroxor.github.io/gensim/static/notebooks/doc2vec-wikipedia.html)
+* [Gensim: Core Concepts](https://radimrehurek.com/gensim/auto_examples/core/run_core_concepts.html)
+* [Gensim: Doc2Vec](https://radimrehurek.com/gensim/auto_examples/tutorials/run_doc2vec_lee.html)
 
 
 ## Class 11 - 11/8

@@ -18,3 +18,5 @@ permalink: /notebooks
 * [Week 7 - Image Sorting](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Image%20Sorting.ipynb)
 
 * [Week 10 - Audio](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Audio.ipynb)
+
+* [Week 12 - Text](https://github.com/channelstudio/fall2019designingml/blob/master/notebooks/Bag%20of%20Words%20and%20Doc2Vec.ipynb)

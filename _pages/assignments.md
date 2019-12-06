@@ -7,6 +7,18 @@ permalink: /assignments
 
 For all readings unless otherwise noted, please write down two non "yes or no" questions and type them into the Google doc I've shared with you. Be prepared to discuss the questions/readings in class.
 
+# Week 12
+
+The Final (due 12/13)
+
+Using what we've learned in the class, create a web interface for exploring a dataset. This interface can be portal into a museum collection, a tool that aids in the creative process, or a continuation of your exploration for the midterm. 
+
+Metrics for grading:
+* 25% - Originality of concept - Does the project explore an original and novel concept?
+* 25% - Fit and finish - Is the project finished? Was there clearly thought put into this?
+* 25% - Theme - Did the project follow the prompt?
+* 25% - Presentation - Is the presentation coherent and thoughtful?
+
 ## Week 10 (due 11/8)
 
 * Read
